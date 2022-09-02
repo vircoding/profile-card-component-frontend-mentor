@@ -1,0 +1,98 @@
+/* Google Fonts https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Custom Properties */
+:root {
+    --kumbh-sans: 'Kumbh Sans', sans-serif;
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Standard Styles */
+body {
+    font-family: var(--kumbh-sans);
+    font-size: 18px;
+    color: var(--dark-grayish-blue);
+    background-color: var(--dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    min-height: 100vh;
+    padding: 150px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+/* Card */
+.card {
+    max-width: 350px;
+    height: 375px;
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-avatar {
+    margin-top: -48px;
+    border-radius: 50%;
+    border: 5px solid var(--white);
+}
+
+/* Card | Info */
+.card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.info-name {
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.info-age {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+.info-city {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.info-line {
+    margin-top: 30px;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.25);
+}
+
+/* Card | Info | Stats */
+.info-stats {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.stats-value {
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.stats-stat {
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
